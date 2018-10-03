@@ -14,7 +14,7 @@ source:
     - lib{{ name }}-{{ version }}-fixes-1.patch  # [unix]
 
 build:
-  number: 0
+  number: 1000
   features:
     - vc9  # [win and py27]
     - vc10  # [win and py34]
