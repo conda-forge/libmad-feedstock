@@ -3,7 +3,7 @@ About libmad
 
 Home: http://www.underbit.com/products/mad/
 
-Package license: GPLv2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libmad-feedstock/blob/main/LICENSE.txt)
 
@@ -193,4 +193,5 @@ Feedstock Maintainers
 =====================
 
 * [@dschreij](https://github.com/dschreij/)
+* [@h-vetinari](https://github.com/h-vetinari/)
 
