@@ -15,10 +15,11 @@ build:
 
 requirements:
   build:
-    - cmake  # [win]
-    - autoconf  # [not win]
-    - automake  # [not win]
-    - libtool  # [not win]
+    - cmake      # [win]
+    - autoconf   # [unix]
+    - automake   # [unix]
+    - libtool    # [unix]
+    - make       # [unix]
     - {{ compiler('c') }}
   host:
     - pkgconfig  # [not win]
