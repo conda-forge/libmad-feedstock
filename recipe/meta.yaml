@@ -11,7 +11,7 @@ source:
     - libmad-{{ version }}-fixes-1.patch  # [not win]
 
 build:
-  number: 1000
+  number: 1001
 
 requirements:
   build:
