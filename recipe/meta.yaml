@@ -39,7 +39,7 @@ test:
 
 about:
   home: http://www.underbit.com/products/mad/
-  license: GPLv2
+  license: GPL-2.0-only
   license_file: COPYING
   summary: "MPEG audio decoder"
   description: |
