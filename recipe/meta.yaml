@@ -11,14 +11,18 @@ source:
     - libmad-{{ version }}-fixes-1.patch  # [not win]
 
 build:
-  number: 1000
+  number: 1001
+  run_exports:
+    # https://abi-laboratory.pro/tracker/timeline/libmad
+    - {{ pin_subpackage("libmad", max_pin="x.x") }}
 
 requirements:
   build:
-    - cmake  # [win]
-    - autoconf  # [not win]
-    - automake  # [not win]
-    - libtool  # [not win]
+    - cmake      # [win]
+    - autoconf   # [unix]
+    - automake   # [unix]
+    - libtool    # [unix]
+    - make       # [unix]
     - {{ compiler('c') }}
   host:
     - pkgconfig  # [not win]
@@ -35,7 +39,7 @@ test:
 
 about:
   home: http://www.underbit.com/products/mad/
-  license: GPLv2
+  license: GPL-2.0-only
   license_file: COPYING
   summary: "MPEG audio decoder"
   description: |
@@ -48,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - dschreij
+    - h-vetinari
